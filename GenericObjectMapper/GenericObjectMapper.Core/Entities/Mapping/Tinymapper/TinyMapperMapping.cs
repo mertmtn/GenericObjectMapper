@@ -1,6 +1,5 @@
 ﻿
-using Nelibur.ObjectMapper;
-using System;
+using Nelibur.ObjectMapper; 
 using GenericObjectMapper.Core.Entities;
 namespace Northwind.Core.Entities.Mapping.Tinymapper
 {
