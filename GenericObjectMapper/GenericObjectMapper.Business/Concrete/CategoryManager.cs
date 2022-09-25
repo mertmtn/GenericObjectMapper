@@ -19,12 +19,12 @@ namespace GenericObjectMapper.Business.Concrete
             _mapper = mapper;
         }
 
-        IDataResult<List<Category>> ICategoryService.GetAll()
+        public IDataResult<List<Category>> GetAll()
         {
             return new SuccessDataResult<List<Category>>(_categoryDal.GetAll());
         }
 
-        IDataResult<CategoryDTO> ICategoryService.GetById(int categoryId)
+        public IDataResult<CategoryDTO> GetById(int categoryId)
         {
             return new SuccessDataResult<CategoryDTO>(_mapper.Map<Category, CategoryDTO>(_categoryDal.Get(c => c.CategoryId == categoryId)));
         }
