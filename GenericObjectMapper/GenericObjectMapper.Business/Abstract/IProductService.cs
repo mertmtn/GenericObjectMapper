@@ -5,7 +5,7 @@ namespace GenericObjectMapper.Business.Abstract
 {
     public interface IProductService
     {
-        IDataResult<Product> GetProductDetail(int productId);
+        IDataResult<ProductDTO> GetProductDetail(int productId);
         IDataResult<List<ProductDetailDTO>> GetProductDetailList(); 
     }
 }
